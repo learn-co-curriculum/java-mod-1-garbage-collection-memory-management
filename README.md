@@ -70,7 +70,7 @@ stack to point to a `Cat` object within the heap.
 point it to another `Cat` object on the heap space.
 - Now we are going to re-assign `garfield` to `tom` so both our references are pointing to the same `Cat` object. Note
 that the other `Cat` object no longer has a reference pointing to it. This object is now **eligible for garbage**
-**collection**. Since the other cat object is no longer useful to us in the program,
+**collection**. Since the other cat object is no longer useful to us in the program.
 
 ## Resources
 
