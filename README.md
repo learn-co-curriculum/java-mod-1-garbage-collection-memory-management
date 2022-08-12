@@ -32,6 +32,7 @@ The **heap** is where the Java objects live. This is where new objects are creat
 cleaned up. 
 
 Consider the following example:
+
 ![memory map](https://curriculum-content.s3.amazonaws.com/java-mod-1/garbage-collection-and-memory-management/Memory-1.png)
 
 Within this example, we have our code sitting in the left block, the stack is in the center block, and the heap is the
@@ -56,6 +57,7 @@ created. This process happens automatically in the background, so us, programmer
 deleting unused objects within their code. Pretty cool, huh? 
 
 Let's look at an example of how the garbage collection works!
+
 ![garbage collection eligibility](https://curriculum-content.s3.amazonaws.com/java-mod-1/garbage-collection-and-memory-management/Memory-2.png)
 
 Our `Cat` objects `tom` and `garfield` are back at it to show us how memory is managed! Let's break down the example
@@ -68,7 +70,7 @@ stack to point to a `Cat` object within the heap.
 point it to another `Cat` object on the heap space.
 - Now we are going to re-assign `garfield` to `tom` so both our references are pointing to the same `Cat` object. Note
 that the other `Cat` object no longer has a reference pointing to it. This object is now **eligible for garbage**
-**collection**. Since the other cat object is no longer useful to us in the program,
+**collection**. Since the other cat object is no longer useful to us in the program.
 
 ## Resources
 
